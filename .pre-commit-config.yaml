@@ -38,20 +38,20 @@ repos:
 
   # Python hooks
   - repo: https://github.com/asottile/pyupgrade
-    rev: v3.16.0
+    rev: v3.17.0
     hooks:
     -   id: pyupgrade
         args: [--py36-plus]
 
   - repo: https://github.com/psf/black
-    rev: 24.4.2
+    rev: 24.8.0
     hooks:
       - id: black
         args: ["--line-length=79", -S]
 
   # CPP hooks
   - repo: https://github.com/pre-commit/mirrors-clang-format
-    rev: v18.1.6
+    rev: v18.1.8
     hooks:
       - id: clang-format
         args: ['-fallback-style=none', '-i']
@@ -117,7 +117,7 @@ repos:
 
   # Check Github files
   - repo: https://github.com/python-jsonschema/check-jsonschema
-    rev: 0.28.4
+    rev: 0.29.1
     hooks:
       - id: check-github-workflows
         args: ["--verbose"]
@@ -134,7 +134,7 @@ repos:
 
   # ROS checks
   - repo: https://github.com/tier4/pre-commit-hooks-ros
-    rev: v0.8.0
+    rev: v0.10.0
     hooks:
       - id: flake8-ros
       - id: prettier-xacro
