@@ -2,6 +2,15 @@
 Changelog for package av_radar_bridge
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Update topics namespaces to match av_radar update
+  - Input:  `/sensor/*` -> `/conti_pdk/*`
+  - Output: `/output/*` -> `/sensor/*`
+* Setting the correct network interface in Cyclone DDS configuration
+
+* Contributors: Hector Cruz
+
 1.1.0 (2024-05-21)
 ------------------
 * Add cyclone DDS as ROS RMW  + configurate it to support high msg throughput
