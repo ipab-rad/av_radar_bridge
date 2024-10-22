@@ -2,8 +2,8 @@
 Changelog for package av_radar_bridge
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+2.0.0 (2024-10-22)
+------------------
 * Update topics namespaces to match av_radar update
   - Input:  `/sensor/*` -> `/conti_pdk/*`
   - Output: `/output/*` -> `/sensor/*`
