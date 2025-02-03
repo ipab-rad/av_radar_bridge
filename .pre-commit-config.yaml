@@ -44,7 +44,7 @@ repos:
         args: [--py36-plus]
 
   - repo: https://github.com/psf/black
-    rev: 24.10.0
+    rev: 25.1.0
     hooks:
       - id: black
         args: ["--line-length=79", -S]
@@ -109,7 +109,7 @@ repos:
   # Spellcheck in comments and docs
   # skipping of *.svg files is not working...
   - repo: https://github.com/codespell-project/codespell
-    rev: v2.4.0
+    rev: v2.4.1
     hooks:
       - id: codespell
         args: ['--write-changes', '--uri-ignore-words-list=ist', '-L manuel']
@@ -117,7 +117,7 @@ repos:
 
   # Check Github files
   - repo: https://github.com/python-jsonschema/check-jsonschema
-    rev: 0.31.0
+    rev: 0.31.1
     hooks:
       - id: check-github-workflows
         args: ["--verbose"]
